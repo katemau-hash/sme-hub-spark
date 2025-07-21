@@ -22,21 +22,21 @@ export const NeedHelp = () => {
       title: "Need Help Using Rise or Reviewing a Module?",
       description: "Technical support for learning platforms, content review tools, and systems",
       icon: Monitor,
-      color: "accent", 
+      color: "success", 
       actions: ["Access tutorials", "Get technical support", "Request training"]
     },
     {
       title: "Need to Submit a Video, Script, or Idea?",
       description: "Guidance on content creation, submission processes, and file formats",
       icon: Video,
-      color: "success",
+      color: "accent",
       actions: ["Upload guidelines", "Submit content", "Get feedback"]
     },
     {
       title: "Request a Translation",
       description: "Multilingual support for content localization and accessibility",
       icon: Globe,
-      color: "warning",
+      color: "info",
       actions: ["Translation request", "Language support", "Cultural review"]
     }
   ];
@@ -44,9 +44,9 @@ export const NeedHelp = () => {
   const getColorClasses = (color: string) => {
     switch (color) {
       case 'primary': return 'bg-primary text-primary-foreground';
-      case 'accent': return 'bg-accent text-accent-foreground';
       case 'success': return 'bg-success text-success-foreground';
-      case 'warning': return 'bg-warning text-warning-foreground';
+      case 'accent': return 'bg-accent text-accent-foreground';
+      case 'info': return 'bg-info text-info-foreground';
       default: return 'bg-muted text-muted-foreground';
     }
   };
@@ -54,9 +54,9 @@ export const NeedHelp = () => {
   const getBorderColor = (color: string) => {
     switch (color) {
       case 'primary': return 'hover:border-primary/50';
-      case 'accent': return 'hover:border-accent/50';
       case 'success': return 'hover:border-success/50';
-      case 'warning': return 'hover:border-warning/50';
+      case 'accent': return 'hover:border-accent/50';
+      case 'info': return 'hover:border-info/50';
       default: return 'hover:border-muted';
     }
   };

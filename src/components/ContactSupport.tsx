@@ -25,7 +25,7 @@ export const ContactSupport = () => {
       role: "Senior Instructional Designer",
       description: "Supports learning experience design, feedback on course structure, flow, interactivity, and reviewing SME input",
       icon: Palette,
-      color: "accent",
+      color: "success",
       initials: "RT"
     },
     {
@@ -33,7 +33,7 @@ export const ContactSupport = () => {
       role: "Media and Content Producer", 
       description: "Helps with video production, voiceover, podcasts, or any rich media that SMEs may be involved in",
       icon: Video,
-      color: "success",
+      color: "accent",
       initials: "AM"
     }
   ];
@@ -41,8 +41,8 @@ export const ContactSupport = () => {
   const getColorClasses = (color: string) => {
     switch (color) {
       case 'primary': return 'bg-primary text-primary-foreground';
-      case 'accent': return 'bg-accent text-accent-foreground';
       case 'success': return 'bg-success text-success-foreground';
+      case 'accent': return 'bg-accent text-accent-foreground';
       default: return 'bg-muted text-muted-foreground';
     }
   };
@@ -50,8 +50,8 @@ export const ContactSupport = () => {
   const getColorBorder = (color: string) => {
     switch (color) {
       case 'primary': return 'border-primary/20 hover:border-primary/40';
-      case 'accent': return 'border-accent/20 hover:border-accent/40';
       case 'success': return 'border-success/20 hover:border-success/40';
+      case 'accent': return 'border-accent/20 hover:border-accent/40';
       default: return 'border-muted';
     }
   };

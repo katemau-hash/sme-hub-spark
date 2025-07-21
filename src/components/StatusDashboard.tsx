@@ -9,7 +9,7 @@ export const StatusDashboard = () => {
       title: "Courses in Development",
       count: 8,
       icon: FileText,
-      color: "warning",
+      color: "info",
       description: "Content being created"
     },
     {
@@ -48,7 +48,7 @@ export const StatusDashboard = () => {
                 <CardHeader className="pb-3">
                   <div className="flex items-center justify-between">
                     <div className={`p-2 rounded-lg ${
-                      item.color === 'warning' ? 'bg-warning-soft text-warning' :
+                      item.color === 'info' ? 'bg-info-soft text-info' :
                       item.color === 'primary' ? 'bg-primary/10 text-primary' :
                       'bg-success-soft text-success'
                     }`}>
@@ -63,7 +63,7 @@ export const StatusDashboard = () => {
                   <Progress 
                     value={percentage} 
                     className={`h-2 ${
-                      item.color === 'warning' ? '[&>div]:bg-warning' :
+                      item.color === 'info' ? '[&>div]:bg-info' :
                       item.color === 'primary' ? '[&>div]:bg-primary' :
                       '[&>div]:bg-success'
                     }`}

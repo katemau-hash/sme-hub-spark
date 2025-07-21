@@ -41,9 +41,9 @@ export const YourInvolvement = () => {
 
   const getStatusColor = (type: string) => {
     switch (type) {
-      case 'urgent': return 'bg-accent text-accent-foreground';
+      case 'urgent': return 'bg-warning text-warning-foreground';
       case 'review': return 'bg-primary text-primary-foreground';
-      case 'development': return 'bg-warning text-warning-foreground';
+      case 'development': return 'bg-info text-info-foreground';
       case 'complete': return 'bg-success text-success-foreground';
       default: return 'bg-muted text-muted-foreground';
     }
@@ -73,7 +73,7 @@ export const YourInvolvement = () => {
             
             return (
               <Card key={course.title} className={`hover-lift transition-smooth ${
-                course.statusType === 'urgent' ? 'border-l-4 border-l-accent' : 
+                course.statusType === 'urgent' ? 'border-l-4 border-l-warning' : 
                 course.statusType === 'review' ? 'border-l-4 border-l-primary' : ''
               }`}>
                 <CardHeader className="pb-3">
@@ -105,7 +105,7 @@ export const YourInvolvement = () => {
                           className={`h-2 rounded-full transition-all duration-300 ${
                             course.progress === 100 ? 'bg-success' :
                             course.progress > 75 ? 'bg-primary' :
-                            course.progress > 50 ? 'bg-warning' :
+                            course.progress > 50 ? 'bg-info' :
                             'bg-muted-foreground'
                           }`}
                           style={{ width: `${course.progress}%` }}

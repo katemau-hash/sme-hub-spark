@@ -24,21 +24,21 @@ export const SMEToolkit = () => {
       title: "What Makes Good Feedback",
       description: "Guidelines for constructive, actionable feedback that improves learning outcomes",
       icon: MessageCircle,
-      color: "accent",
+      color: "success",
       link: "#"
     },
     {
       title: "How to Submit Content",
       description: "Step-by-step guide for uploading materials, scripts, and other content",
       icon: Upload,
-      color: "success",
+      color: "accent",
       link: "#"
     },
     {
       title: "Examples of Final Deliverables",
       description: "Sample outputs and completed projects to guide your contributions",
       icon: FileText,
-      color: "warning",
+      color: "info",
       link: "#"
     }
   ];
@@ -66,7 +66,7 @@ export const SMEToolkit = () => {
       case 'primary': return 'bg-primary/10 text-primary border-primary/20';
       case 'accent': return 'bg-accent/10 text-accent border-accent/20';
       case 'success': return 'bg-success/10 text-success border-success/20';
-      case 'warning': return 'bg-warning/10 text-warning border-warning/20';
+      case 'info': return 'bg-info/10 text-info border-info/20';
       default: return 'bg-muted text-muted-foreground';
     }
   };
