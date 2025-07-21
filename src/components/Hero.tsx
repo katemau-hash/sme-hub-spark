@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Users, BookOpen, Target } from "lucide-react";
 import heroImage from "@/assets/hero-collaboration.jpg";
-
 export const Hero = () => {
-  return (
-    <section className="relative overflow-hidden bg-gradient-subtle">
+  return <section className="relative overflow-hidden bg-gradient-subtle">
       <div className="container mx-auto px-6 py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -15,8 +13,8 @@ export const Hero = () => {
                 <span className="text-sm font-medium uppercase tracking-wider">Subject Matter Experts</span>
               </div>
               
-              <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                Welcome, <span className="bg-gradient-primary bg-clip-text text-transparent">SMEs</span>
+              <h1 className="text-4xl font-bold leading-tight text-slate-950 lg:text-6xl">
+                Welcome, <span className="bg-gradient-primary bg-clip-text text-slate-950">SMEs</span>
               </h1>
               
               <p className="text-xl text-muted-foreground leading-relaxed">
@@ -56,11 +54,7 @@ export const Hero = () => {
           {/* Hero Image */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-elegant hover-lift">
-              <img
-                src={heroImage}
-                alt="Team collaboration on learning projects"
-                className="w-full h-auto object-cover"
-              />
+              <img src={heroImage} alt="Team collaboration on learning projects" className="w-full h-auto object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent"></div>
             </div>
             
@@ -75,12 +69,11 @@ export const Hero = () => {
             <div className="absolute -bottom-4 -left-4 bg-accent text-accent-foreground p-4 rounded-xl shadow-accent hover-lift">
               <div className="text-center">
                 <div className="text-2xl font-bold">92%</div>
-                <div className="text-xs opacity-90">Success Rate</div>
+                <div className="text-xs opacity-90">Completion Rate</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
