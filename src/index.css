@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* WCAG-Compliant Design System. All colors use RGB values for proper browser compatibility. */
+/* Professional Cool-Tone Design System. WCAG-compliant with neutral palette. */
 
 @layer base {
   :root {
-    /* Modern WCAG-Compliant Design System */
+    /* Professional Cool-Tone Design System */
     --background: 255 255 255;      /* Pure white background */
     --foreground: 15 23 42;         /* Slate 900 - high contrast text */
 
@@ -16,9 +16,9 @@
     --popover: 255 255 255;
     --popover-foreground: 15 23 42;
 
-    --primary: 37 99 235;           /* Modern blue-600 */
+    --primary: 30 64 175;           /* Professional blue-800 */
     --primary-foreground: 255 255 255;
-    --primary-glow: 59 130 246;     /* Blue-500 for effects */
+    --primary-glow: 59 130 246;     /* Blue-500 for subtle effects */
 
     --secondary: 248 250 252;       /* Slate-50 */
     --secondary-foreground: 51 65 85; /* Slate-700 */
@@ -26,54 +26,54 @@
     --muted: 241 245 249;           /* Slate-100 */
     --muted-foreground: 100 116 139; /* Slate-500 */
 
-    --accent: 16 185 129;           /* Modern emerald-500 */
+    --accent: 6 182 212;            /* Cool cyan-500 */
     --accent-foreground: 255 255 255;
-    --accent-soft: 236 253 245;     /* Emerald-50 */
+    --accent-soft: 236 254 255;     /* Cyan-50 */
 
-    --success: 34 197 94;           /* Green-500 */
+    --success: 5 150 105;           /* Emerald-600 */
     --success-foreground: 255 255 255;
-    --success-soft: 240 253 244;    /* Green-50 */
+    --success-soft: 236 253 245;    /* Emerald-50 */
 
-    --info: 59 130 246;             /* Blue-500 */
+    --info: 37 99 235;              /* Blue-600 */
     --info-foreground: 255 255 255;
     --info-soft: 239 246 255;       /* Blue-50 */
 
-    --warning: 245 101 101;         /* Red-400 instead of yellow */
+    --warning: 71 85 105;           /* Neutral slate-600 */
     --warning-foreground: 255 255 255;
-    --warning-soft: 254 242 242;    /* Red-50 */
+    --warning-soft: 241 245 249;    /* Slate-100 */
 
-    --destructive: 239 68 68;       /* Red-500 */
+    --destructive: 220 38 38;       /* Red-700 */
     --destructive-foreground: 255 255 255;
 
     --border: 226 232 240;          /* Slate-200 */
     --input: 226 232 240;           /* Slate-200 */
-    --ring: 37 99 235;              /* Primary blue */
+    --ring: 30 64 175;              /* Primary blue */
 
     --radius: 0.75rem;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, rgb(37 99 235), rgb(59 130 246));
-    --gradient-accent: linear-gradient(135deg, rgb(16 185 129), rgb(52 211 153));
+    /* Cool-tone Gradients */
+    --gradient-primary: linear-gradient(135deg, rgb(30 64 175), rgb(59 130 246));
+    --gradient-accent: linear-gradient(135deg, rgb(6 182 212), rgb(14 165 233));
     --gradient-subtle: linear-gradient(180deg, rgb(255 255 255), rgb(248 250 252));
 
-    /* Shadows */
+    /* Refined Shadows */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
-    --shadow-accent: 0 4px 6px -1px rgb(16 185 129 / 0.2);
+    --shadow-accent: 0 4px 6px -1px rgb(6 182 212 / 0.15);
 
-    /* Animations */
+    /* Smooth Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 248 250 252;
     --sidebar-foreground: 51 65 85;
-    --sidebar-primary: 37 99 235;
+    --sidebar-primary: 30 64 175;
     --sidebar-primary-foreground: 255 255 255;
     --sidebar-accent: 241 245 249;
     --sidebar-accent-foreground: 51 65 85;
     --sidebar-border: 226 232 240;
-    --sidebar-ring: 37 99 235;
+    --sidebar-ring: 30 64 175;
   }
 
   .dark {
@@ -86,9 +86,9 @@
     --popover: 15 23 42;
     --popover-foreground: 248 250 252;
 
-    --primary: 99 102 241;          /* Indigo-500 */
+    --primary: 59 130 246;          /* Cool blue-500 */
     --primary-foreground: 15 23 42;
-    --primary-glow: 129 140 248;    /* Indigo-400 */
+    --primary-glow: 96 165 250;     /* Blue-400 */
 
     --secondary: 30 41 59;          /* Slate-800 */
     --secondary-foreground: 203 213 225; /* Slate-300 */
@@ -96,11 +96,11 @@
     --muted: 30 41 59;              /* Slate-800 */
     --muted-foreground: 148 163 184; /* Slate-400 */
 
-    --accent: 34 197 94;            /* Green-500 */
+    --accent: 34 211 238;           /* Cool cyan-400 */
     --accent-foreground: 15 23 42;
-    --accent-soft: 20 83 45;        /* Green-800 */
+    --accent-soft: 22 78 99;        /* Cyan-800 */
 
-    --success: 52 211 153;          /* Emerald-400 */
+    --success: 16 185 129;          /* Emerald-500 */
     --success-foreground: 15 23 42;
     --success-soft: 6 78 59;        /* Emerald-800 */
 
@@ -108,25 +108,25 @@
     --info-foreground: 15 23 42;
     --info-soft: 30 58 138;         /* Blue-800 */
 
-    --warning: 248 113 113;         /* Red-400 */
+    --warning: 100 116 139;         /* Neutral slate-500 */
     --warning-foreground: 15 23 42;
-    --warning-soft: 153 27 27;      /* Red-800 */
+    --warning-soft: 51 65 85;       /* Slate-700 */
 
     --destructive: 248 113 113;     /* Red-400 */
     --destructive-foreground: 15 23 42;
 
     --border: 51 65 85;             /* Slate-700 */
     --input: 51 65 85;
-    --ring: 99 102 241;
+    --ring: 59 130 246;
 
     --sidebar-background: 15 23 42;
     --sidebar-foreground: 203 213 225;
-    --sidebar-primary: 99 102 241;
+    --sidebar-primary: 59 130 246;
     --sidebar-primary-foreground: 15 23 42;
     --sidebar-accent: 30 41 59;
     --sidebar-accent-foreground: 203 213 225;
     --sidebar-border: 51 65 85;
-    --sidebar-ring: 99 102 241;
+    --sidebar-ring: 59 130 246;
   }
 }
 
