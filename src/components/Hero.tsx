@@ -14,7 +14,7 @@ export const Hero = () => {
               </div>
               
               <h1 className="text-4xl font-bold leading-tight text-slate-950 lg:text-6xl">
-                Welcome, <span className="bg-gradient-primary bg-clip-text text-slate-950">SMEs</span>
+                Welcome, <span className="text-primary">SMEs</span>
               </h1>
               
               <p className="text-xl text-muted-foreground leading-relaxed">
